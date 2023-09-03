@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Landing Page</title>
+        <style>
+            /* Reset some default styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Apply basic styles for the page */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                line-height: 1.6;
+            }
+
+            /* Navbar styles */
+            .navbar {
+                background-color: #fff;
+                color: #333;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; /* Vertically center-align items */
+                padding: 10px 20px;
+            }
+
+            .navbar img {
+                margin-left: 20px;
+                margin-right: auto; /* Push the logo to the left */
+            }
+
+            .navbar a {
+                color: #333;
+                text-decoration: none;
+                margin-left: 20px; /* Add margin between links */
+            }
+
+            /* Banner styles */
+            .banner {
+                background-image: url("./assets/banner.jpg");
+                background-size: cover;
+                text-align: center;
+                color: #fff;
+                padding: 100px 0;
+            }
+
+            .banner h1 {
+                font-size: 36px;
+                color: #333;
+            }
+
+            .banner button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            /* Introduction section styles */
+            .introduction {
+                background-color: #fff;
+                padding: 40px 0;
+                text-align: center;
+            }
+
+            .introduction p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            /* Content section styles */
+            .content {
+                display: flex;
+                justify-content: space-around;
+                padding: 40px 0;
+            }
+
+            .content-column {
+                text-align: center;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                width: 45%;
+            }
+
+            .content-column img {
+                max-width: 100%;
+            }
+
+            /* Footer styles */
+            .footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .footer a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <img src="./assets/logo.png" alt="Logo" height="60" />
+            <a href="#introduction">Introduction</a>
+            <a href="#content">Content</a>
+            <a href="#footer">Contact</a>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Welcome to Our Website</h1>
+            <a href="#introduction">
+                <button>Learn More</button>
+            </a>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="introduction" id="introduction">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                aliquam, lectus nec vehicula rhoncus, odio risus eleifend lorem.
+            </p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content" id="content">
+            <div class="content-column">
+                <img src="./assets/about.jpg" alt="Image 1" />
+                <h2>About</h2>
+                <p>Description for Image 1</p>
+            </div>
+            <div class="content-column">
+                <img src="./assets/take_action.jpg" alt="Image 2" />
+                <h2>Take Action</h2>
+                <p>Description for Image 2</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" id="footer">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
